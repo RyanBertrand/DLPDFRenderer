@@ -120,7 +120,7 @@ const DLPRPageMargins DLPRPageMarginsZero = (DLPRPageMargins){0.0, 0.0, 0.0, 0.0
 }
 
 + (CGSize)paperSizeForUSLetterForOrientation:(DLPRPageOrientation)orientation {
-	CGSize paperSizeInInches = CGSizeMake(8.0, 11.0);
+	CGSize paperSizeInInches = CGSizeMake(8.5, 11.0);
 	CGSize paperSizeInPixels = [self scalePaperSize:paperSizeInInches by:72.0];
 	return [self rotatePaperSize:paperSizeInPixels toOrientation:orientation];
 }
